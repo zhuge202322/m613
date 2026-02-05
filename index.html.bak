@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OKIEE | Precision Sourcing & Proven Execution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #1A2B3C;
+            --gold: #D97706;
+            --gray-bg: #F9FAFB;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--navy);
+            scroll-behavior: smooth;
+        }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        
+        /* 导航栏滚动效果 */
+        nav.scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            padding: 1rem 0;
+        }
+
+        /* 琥珀金强调色 */
+        .text-gold { color: var(--gold); }
+        .bg-gold { background-color: var(--gold); }
+        .border-gold { border-color: var(--gold); }
+
+        /* 按钮悬停 */
+        .btn-primary {
+            background-color: var(--navy);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-primary:hover {
+            background-color: var(--gold);
+            transform: translateY(-2px);
+        }
+
+        /* 模块间距 */
+        .section-padding { padding: 120px 0; }
+
+        /* 卡片效果 */
+        .service-card {
+            border: 1px solid #E5E7EB;
+            transition: all 0.4s ease;
+        }
+        .service-card:hover {
+            border-color: var(--gold);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .section-padding { padding: 60px 0; }
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- 导航栏 Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 py-6 px-8 flex justify-between items-center" id="mainNav">
+        <div class="flex items-center space-x-2">
+            <span class="text-2xl font-bold tracking-tighter uppercase italic">O<span class="text-gold">K</span>IEE</span>
+        </div>
+        <div class="hidden md:flex space-x-10 text-sm font-semibold tracking-wide uppercase">
+            <a href="#home" class="hover:text-gold transition">Home</a>
+            <a href="#why-us" class="hover:text-gold transition">Why Us</a>
+            <a href="#services" class="hover:text-gold transition">What We Do</a>
+            <a href="#operate" class="hover:text-gold transition">Operations</a>
+            <a href="#contact" class="hover:text-gold transition">Contact</a>
+        </div>
+        <button class="md:hidden text-2xl">☰</button>
+    </nav>
+
+    <!-- 首屏 Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="container mx-auto px-8 grid md:grid-cols-2 gap-0 items-center">
+            <!-- 左侧文字内容 (占50%) -->
+            <div class="space-y-10 pr-12">
+                <div class="inline-block px-3 py-1 border border-gold text-gold text-xs font-bold tracking-widest uppercase">
+                    Since 2008
+                </div>
+                <div class="space-y-4">
+                    <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+                        Precision Sourcing.<br>
+                        <span class="text-gray-300">Proven Execution.</span>
+                    </h1>
+                </div>
+                <p class="text-xl text-gray-500 max-w-lg leading-relaxed">
+                    Connecting U.S. businesses with verified China supply chains through institutional-grade expertise and on-the-ground management.
+                </p>
+                <div class="pt-4">
+                    <a href="#contact" class="btn-primary text-white px-10 py-4 text-xs font-bold uppercase tracking-[0.2em] inline-block">
+                        Get a Quote
+                    </a>
+                </div>
+            </div>
+            <!-- 右侧图片内容 (占50%) -->
+            <div class="relative pl-4">
+                <div class="w-full aspect-square md:aspect-[4/3] bg-gray-100 relative grayscale hover:grayscale-0 transition duration-1000 overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&q=80&w=1200" alt="Supply Chain Port" class="w-full h-full object-cover">
+                    <!-- 浮动经验卡片 -->
+                    <div class="absolute bottom-10 left-0 bg-white p-10 shadow-2xl transform -translate-x-1/4 hidden md:block border-l-4 border-gold">
+                        <p class="text-4xl font-bold mb-1">15+</p>
+                        <p class="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-bold leading-none">Years of Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 信任锚点 Why Us -->
+    <section id="why-us" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-8">
+            <div class="grid md:grid-cols-3 gap-16">
+                <div class="space-y-4">
+                    <span class="text-4xl font-serif text-gray-200">01</span>
+                    <h3 class="text-xl font-bold">Established Roots</h3>
+                    <p class="text-gray-500 leading-relaxed">Built upon Royal Import & Export Co., Ltd (Est. 2008), bringing over a decade of verified supply chain infrastructure.</p>
+                </div>
+                <div class="space-y-4">
+                    <span class="text-4xl font-serif text-gray-200">02</span>
+                    <h3 class="text-xl font-bold">Local Execution</h3>
+                    <p class="text-gray-500 leading-relaxed">Our experienced China-based team manages audits, quality control, and logistics directly at the source.</p>
+                </div>
+                <div class="space-y-4">
+                    <span class="text-4xl font-serif text-gray-200">03</span>
+                    <h3 class="text-xl font-bold">U.S. Standard</h3>
+                    <p class="text-gray-500 leading-relaxed">Specifically designed for the U.S. market, ensuring compliance, quality standards, and seamless communication.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务模块 What We Do -->
+    <section id="services" class="section-padding">
+        <div class="container mx-auto px-8">
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-4">Core Services</h2>
+                <div class="w-20 h-1 bg-gold"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="service-card p-10 bg-white">
+                    <h4 class="text-lg font-bold mb-4">Product Sourcing</h4>
+                    <p class="text-sm text-gray-500 mb-6">Strategic identification and selection of manufacturers that align with your specific technical requirements.</p>
+                    <a href="#" class="text-xs font-bold uppercase tracking-widest hover:text-gold transition">Learn More →</a>
+                </div>
+                <!-- Card 2 -->
+                <div class="service-card p-10 bg-white">
+                    <h4 class="text-lg font-bold mb-4">Supplier Verification</h4>
+                    <p class="text-sm text-gray-500 mb-6">Rigorous factory audits and background checks to mitigate operational and financial risks.</p>
+                    <a href="#" class="text-xs font-bold uppercase tracking-widest hover:text-gold transition">Learn More →</a>
+                </div>
+                <!-- Card 3 -->
+                <div class="service-card p-10 bg-white">
+                    <h4 class="text-lg font-bold mb-4">Quality Control</h4>
+                    <p class="text-sm text-gray-500 mb-6">On-site inspections during production and before shipment to ensure zero-defect standards.</p>
+                    <a href="#" class="text-xs font-bold uppercase tracking-widest hover:text-gold transition">Learn More →</a>
+                </div>
+                <!-- Card 4 -->
+                <div class="service-card p-10 bg-white">
+                    <h4 class="text-lg font-bold mb-4">Trade Support</h4>
+                    <p class="text-sm text-gray-500 mb-6">Comprehensive handling of customs, duties, and international logistics documentation.</p>
+                    <a href="#" class="text-xs font-bold uppercase tracking-widest hover:text-gold transition">Learn More →</a>
+                </div>
+                <!-- Card 5 -->
+                <div class="service-card p-10 bg-white">
+                    <h4 class="text-lg font-bold mb-4">Long-term Procurement</h4>
+                    <p class="text-sm text-gray-500 mb-6">Modular supply chain management for businesses seeking consistent, long-term trade partners.</p>
+                    <a href="#" class="text-xs font-bold uppercase tracking-widest hover:text-gold transition">Learn More →</a>
+                </div>
+                <!-- Card 6 (CTA) -->
+                <div class="bg-navy p-10 flex flex-col justify-center items-start text-white">
+                    <h4 class="text-xl font-bold mb-4">Ready to optimize?</h4>
+                    <p class="text-sm text-gray-400 mb-6">Contact our consultants today for a custom sourcing roadmap.</p>
+                    <a href="#contact" class="text-xs font-bold uppercase tracking-widest text-gold">Start Consultation →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 运营布局 Where We Operate -->
+    <section id="operate" class="border-t border-b border-gray-100">
+        <div class="grid md:grid-cols-2">
+            <div class="p-16 md:p-24 bg-white flex flex-col justify-center border-r border-gray-100">
+                <span class="text-xs font-bold uppercase tracking-[0.3em] text-gold mb-4">Front-end</span>
+                <h3 class="text-3xl font-bold mb-6">U.S. Market Facing</h3>
+                <p class="text-gray-500 leading-relaxed mb-8">Strategizing, Account Management, and Communication based in the U.S. to ensure your business goals are translated perfectly into the supply chain.</p>
+                <img src="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?auto=format&fit=crop&q=80&w=800" alt="US Bridge" class="grayscale h-48 object-cover opacity-80">
+            </div>
+            <div class="p-16 md:p-24 bg-gray-50 flex flex-col justify-center">
+                <span class="text-xs font-bold uppercase tracking-[0.3em] text-gold mb-4">Back-end</span>
+                <h3 class="text-3xl font-bold mb-6">China Execution</h3>
+                <p class="text-gray-500 leading-relaxed mb-8">The operational engine in China, handling Sourcing, Factory Audit, QC, and Shipping. Real-world execution supported by 15 years of local networking.</p>
+                <img src="https://images.unsplash.com/photo-1565610222536-ef125c59da2e?auto=format&fit=crop&q=80&w=800" alt="China Logistics" class="grayscale h-48 object-cover opacity-80">
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 Contact -->
+    <section id="contact" class="section-padding">
+        <div class="container mx-auto px-8">
+            <div class="grid md:grid-cols-12 gap-16">
+                <div class="md:col-span-4">
+                    <h2 class="text-3xl font-bold mb-8">Get in Touch</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-1">Email</p>
+                            <p class="font-semibold underline">business@okiee.com</p>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-1">Office</p>
+                            <p class="font-semibold">U.S. Operations Center<br>Los Angeles, CA</p>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-1">China HQ</p>
+                            <p class="font-semibold text-gray-500">Royal Import & Export Co., Ltd.<br>Guangdong, China</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-8">
+                    <form class="grid grid-cols-2 gap-6">
+                        <div class="col-span-1">
+                            <label class="block text-xs font-bold uppercase mb-2">Name</label>
+                            <input type="text" class="w-full p-4 bg-gray-50 border-none focus:ring-1 focus:ring-gold outline-none">
+                        </div>
+                        <div class="col-span-1">
+                            <label class="block text-xs font-bold uppercase mb-2">Company Email</label>
+                            <input type="email" class="w-full p-4 bg-gray-50 border-none focus:ring-1 focus:ring-gold outline-none">
+                        </div>
+                        <div class="col-span-2">
+                            <label class="block text-xs font-bold uppercase mb-2">Product Interest</label>
+                            <input type="text" class="w-full p-4 bg-gray-50 border-none focus:ring-1 focus:ring-gold outline-none">
+                        </div>
+                        <div class="col-span-2">
+                            <label class="block text-xs font-bold uppercase mb-2">Message</label>
+                            <textarea rows="4" class="w-full p-4 bg-gray-50 border-none focus:ring-1 focus:ring-gold outline-none"></textarea>
+                        </div>
+                        <div class="col-span-2">
+                            <button type="submit" class="btn-primary w-full text-white py-4 font-bold uppercase tracking-[0.2em]">Send Inquiry</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 Footer -->
+    <footer class="bg-navy py-12 px-8 text-white">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center opacity-60">
+            <p class="text-xs tracking-widest">&copy; 2024 OKIEE. PART OF ROYAL IMPORT & EXPORT CO., LTD.</p>
+            <div class="flex space-x-6 text-xs mt-4 md:mt-0 uppercase tracking-widest">
+                <a href="#" class="hover:text-gold transition">Privacy Policy</a>
+                <a href="#" class="hover:text-gold transition">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 导航栏滚动效果脚本
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('mainNav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
