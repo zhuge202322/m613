@@ -4,13 +4,13 @@ export default function Contact() {
       <div className="container mx-auto px-8">
         <div className="grid md:grid-cols-12 gap-16">
           <div className="md:col-span-4">
-            <h2 className="text-3xl font-bold mb-8 text-navy">Get in Touch</h2>
+            <h2 className="text-3xl font-bold mb-8 text-navy">Contact Us</h2>
             <div className="space-y-6">
               <div>
                 <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-1">Email</p>
                 <div className="flex flex-col space-y-1">
-                  <a href="mailto:admin@okieeinc.com" className="font-semibold underline text-navy hover:text-gold transition">admin@okieeinc.com</a>
                   <a href="mailto:contact@okieeinc.com" className="font-semibold underline text-navy hover:text-gold transition">contact@okieeinc.com</a>
+                  <a href="mailto:admin@okieeinc.com" className="font-semibold underline text-navy hover:text-gold transition">admin@okieeinc.com</a>
                 </div>
               </div>
               <div>
@@ -24,7 +24,7 @@ export default function Contact() {
                 <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-1">China HQ</p>
                 <p className="font-semibold text-gray-500">
                   Royal Import & Export Co., Ltd.<br />
-                  Guangdong, China
+                  HaiNing, China
                 </p>
               </div>
             </div>

@@ -38,10 +38,7 @@ export default function Services() {
           {services.map((service) => (
             <div key={service.title} className="service-card p-10 bg-white group hover:-translate-y-1 duration-300">
               <h4 className="text-xl font-bold mb-4 text-navy group-hover:text-gold transition-colors">{service.title}</h4>
-              <p className="text-sm text-gray-500 mb-6 leading-relaxed">{service.description}</p>
-              <Link href="/contact" className="text-xs font-bold uppercase tracking-widest text-navy group-hover:text-gold transition flex items-center gap-2">
-                Get Started <span>→</span>
-              </Link>
+              <p className="text-sm text-gray-500 leading-relaxed">{service.description}</p>
             </div>
           ))}
           
