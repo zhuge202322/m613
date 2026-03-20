@@ -69,12 +69,12 @@ export default function Team() {
                             }}
                         >
                             <div className="w-full h-full bg-white p-6 shadow-2xl border border-gray-100 transform transition-transform hover:scale-105 duration-500">
-                                <div className="relative w-full h-[82%] overflow-hidden bg-gray-100">
+                                <div className="relative w-full h-[82%] overflow-hidden bg-white">
                                     <Image 
                                         src={member.image} 
                                         alt={member.name} 
                                         fill 
-                                        className="object-cover transition-all duration-700" 
+                                        className="object-contain transition-all duration-700" 
                                     />
                                 </div>
                                 <div className="pt-6 text-center">

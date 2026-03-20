@@ -44,6 +44,14 @@ export default function IntroAnimation() {
       >
         <source src="/img/kaimen.mp4" type="video/mp4" />
       </video>
+
+      {/* Skip Button */}
+      <button
+        onClick={handleVideoEnded}
+        className="absolute bottom-8 right-8 z-20 text-white/80 border border-white/20 bg-black/20 backdrop-blur-sm px-6 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-300 text-xs font-bold tracking-[0.2em] uppercase"
+      >
+        Skip Intro
+      </button>
     </div>
   );
 }
