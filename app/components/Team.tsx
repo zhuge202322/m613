@@ -20,7 +20,7 @@ export default function Team() {
   
   // Move the container up to simulate ascending the stairs
   // We need to move enough to see the last item which is at the bottom
-  const spiralY = useTransform(scrollYProgress, [0, 1], ["10%", "-55%"]);
+  const spiralY = useTransform(scrollYProgress, [0, 1], ["10%", "-75%"]);
 
   const teamMembers = [
     { id: 1, image: "/img/01.jpg", name: "Visionary 1", role: "Leadership" },
