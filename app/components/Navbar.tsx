@@ -12,10 +12,10 @@ export default function Navbar() {
   const pathname = usePathname();
   const isHomePage = pathname === "/";
 
-  // Determine text color based on scroll state and page location
-  // Scrolled OR Home Page -> Navy Text
-  // Unscrolled AND Sub Page -> White Text
-  const textColorClass = scrolled || isHomePage ? "text-navy" : "text-white";
+  // Determine text color based on scroll state
+  // Scrolled -> Navy Text (on white background)
+  // Unscrolled -> White Text (on transparent background over dark video/header)
+  const textColorClass = scrolled ? "text-navy" : "text-white";
 
   useEffect(() => {
     const handleScroll = () => {

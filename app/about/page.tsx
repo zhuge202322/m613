@@ -20,7 +20,7 @@ export default function AboutPage() {
             <div className="w-20 h-1 bg-gold"></div>
             <div className="space-y-4 text-gray-500 leading-relaxed">
               <p>
-                The story of Okiee begins not in a boardroom, but on the factory floors of Guangdong. Established in 2008 as <strong>Royal Import & Export Co., Ltd.</strong>, we spent over 15 years mastering the intricacies of Chinese manufacturing, quality control, and logistics.
+                The story of Okiee begins not in a boardroom, but on the factory floors of Hangzhou. Established in 2008 as <strong>Royal Import & Export Co., Ltd.</strong>, we spent over 15 years mastering the intricacies of Chinese manufacturing, quality control, and logistics.
               </p>
               <p>
                 We saw a gap in the market: U.S. businesses desperately needed reliable manufacturing partners but struggled with communication barriers, quality inconsistencies, and lack of accountability.

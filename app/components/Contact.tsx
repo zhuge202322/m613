@@ -16,8 +16,8 @@ export default function Contact() {
               <div>
                 <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-1">Office</p>
                 <p className="font-semibold text-navy">
-                  U.S. Operations Center<br />
-                  Los Angeles, CA
+                  100 N Howard St, Ste R,<br />
+                  Spokane, WA 99201, United States
                 </p>
               </div>
               <div>
