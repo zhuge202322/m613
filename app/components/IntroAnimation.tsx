@@ -7,6 +7,7 @@ export default function IntroAnimation() {
   const [isVisible, setIsVisible] = useState(true);
   const [isFading, setIsFading] = useState(false);
   const [shouldRender, setShouldRender] = useState(true);
+  const [videoSrc, setVideoSrc] = useState<string | null>(null);
 
   const handleVideoEnded = () => {
     setIsFading(true);
@@ -20,6 +21,9 @@ export default function IntroAnimation() {
   };
 
   useEffect(() => {
+    // Set video source based on screen width
+    setVideoSrc(window.innerWidth < 768 ? "/img/shu.mp4" : "/img/kaimen.mp4");
+
     // Lock scroll when animation is active
     if (isVisible) {
       document.body.style.overflow = 'hidden';
@@ -35,15 +39,18 @@ export default function IntroAnimation() {
         isFading ? "opacity-0 pointer-events-none" : "opacity-100"
       )}
     >
-      <video
-        autoPlay
-        muted
-        playsInline
-        className="w-full h-full object-cover"
-        onEnded={handleVideoEnded}
-      >
-        <source src="/img/kaimen.mp4" type="video/mp4" />
-      </video>
+      {videoSrc && (
+        <video
+          key={videoSrc}
+          autoPlay
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+          onEnded={handleVideoEnded}
+        >
+          <source src={videoSrc} type="video/mp4" />
+        </video>
+      )}
 
       {/* Skip Button */}
       <button
